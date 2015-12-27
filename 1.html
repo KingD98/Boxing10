@@ -1,0 +1,45 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Web 1.0</title>
+        <link type="text/css" rel="stylesheet" href="main.css"/>
+   <script> <!-- //
+   function sumd(obj){var d=document;
+   var n=Number(obj.podp.value);
+   var s="";
+   switch(n){
+   case 1: s=60; break;
+   case 3: s=160; break;
+   case 6: s=210; break;
+   default : s="неверен срок подписного периода";
+   }
+   obj.res1.value=s;
+   }
+   //-->
+   </script>
+    </head>	
+<body>
+<FORM name="f1" class="a1">
+
+<p >Бесполезная инфа</p>
+варианты подписки:<p><INPUT type="radio" name="podp" value="1"  checked="checked" onfocus="f1.res1.value=sumd(f1)">1 месяц</br>
+<INPUT type="radio" name="podp" value="3" >3 месяца</br>
+<INPUT type="radio" name="podp" value="6">6 месяцев</p></br>
+<input type="button" value="Вычислить" onClick="sumd(f1)"></br>
+стоимость подписки:<input type="text" name="res1" size="10"></br>
+<input type="reset">
+
+</FORM>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
